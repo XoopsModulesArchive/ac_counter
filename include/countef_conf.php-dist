@@ -1,0 +1,32 @@
+<?php
+//0:ログ数 1:日数 2:月数 でログカット
+define("_AC_CUT_TYPE", 0);
+
+define("_AC_CUT", 1000000);			//ログ数でカット
+define("_AC_CUT_DAYS", 180);		//日数でカット
+define("_AC_CUT_MONTH", 6);			//月数でカット
+
+//ログカットの起動タイミング 10000/10 の確率
+//一旦指定のログ数に達すると絶えずログカッターが呼ばれるので呼ばれる回数を制限します。
+define("_AC_CUT_EXEC", 10000);
+
+define("_LC_TIME", "ja_JP");		//ロケール（日本ならこのまま）
+define("_SELF_ADDR", "192.0.0.");	//記録しないIP
+
+//ブラウジング中と見なす時間（分）−この時間以内の同一IPはカウントアップしない
+define("_REPEAT", 30);
+
+//AntiDos を有効にする-true
+define("_U_USE_ANTIDOS", false);
+//AntiDos - １分間にアクセスされる回数-この回数以上でキック
+define("_U_DOS", 30);
+//AntiDos - 拒否IPに自動登録する-true
+define("_REGISTER_BAD_IPS", false);
+//AntiDos - キック先
+define("_U_DOS_KICK", 'http://www.yahoo.com/');
+
+//改変禁止
+define("_JPGRAPH", '<a href="http://www.aditus.nu/jpgraph/" target="_blank">Turbinado pelo JpGraph</a>');
+define("_UNADON", '<a href="http://u-u-club.ddo.jp/~XOOPS/" target="_blank">Script by xoops@unadon_v</a>');
+
+?>

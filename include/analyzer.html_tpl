@@ -1,0 +1,110 @@
+<?php
+echo '<table cellspacing="0" border="0">
+    <tbody>
+        <tr>
+            <td class="outer" width="20%" valign="top">
+            <table border="0" cellpadding="0" cellspacing="1">
+                <tbody>
+                    <tr>
+                        <td class="head">version 0.90<br />unadon Analyzer</td>
+                    </tr>
+                    <tr>
+                        <td class="even"><strong>日別</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'">アクセス状況</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=day_host&amp;hoge='.date("Y-n-j", time()).'">ホスト</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=day_referer&amp;hoge='.date("Y-n-j", time()).'">参照元</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=day_engine&amp;hoge='.date("Y-n-j", time()).'">検索エンジン</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=day_os&amp;hoge='.date("Y-n-j", time()).'">OS</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=day_browser&amp;hoge='.date("Y-n-j", time()).'">ブラウザ</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=pageid">ページ</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=str_payment&amp;hoge='.date("Y-n-j", time()).'">統計情報</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=log_view&amp;hoge='.date("Y-n-j", time()).'">ログ</a></td>
+                    </tr>
+                    <tr>
+                        <td class="even"><strong>週別</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=week_access&amp;hoge='.date("Y-n-j", time()).'">アクセス状況</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=week_host&amp;hoge='.date("Y-n-j", time()).'">ホスト</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=week_referer&amp;hoge='.date("Y-n-j", time()).'">参照元</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=week_engine&amp;hoge='.date("Y-n-j", time()).'">検索エンジン</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=week_os&amp;hoge='.date("Y-n-j", time()).'">OS</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=week_browser&amp;hoge='.date("Y-n-j", time()).'">ブラウザ</a></td>
+                    </tr>
+                    <tr>
+                        <td class="even"><strong>月別</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=month_access&amp;hoge='.date("Y-n-j", time()).'">アクセス状況</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=month_host&amp;hoge='.date("Y-n-j", time()).'">ホスト</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=month_referer&amp;hoge='.date("Y-n-j", time()).'">参照元</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=month_engine&amp;hoge='.date("Y-n-j", time()).'">検索エンジン</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=month_os&amp;hoge='.date("Y-n-j", time()).'">OS</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=month_browser&amp;hoge='.date("Y-n-j", time()).'">ブラウザ</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd">ページ</td>
+                    </tr>
+                    <tr>
+                        <td class="even"><strong>その他</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=week_trend&amp;hoge='.date("Y-n-j", time()).'">週間トレンド</a></td>
+                    </tr>
+                    <tr>
+                        <td class="odd"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=archive">月別アーカイブ</a><br />月別グラフで前月に遡れば自動で作成</td>
+                    </tr>
+                    <tr>
+                        <td class="even"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=special_graph">これまでのグラフ</a></td>
+                    </tr>
+                    <tr>
+                        <td class="even"><a href="'.$_SERVER['SCRIPT_NAME'].'?mode=vacuum">テーブルの最適化</a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </td>
+            <td style="text-align: center; vertical-align: top; padding : 10px;font-size : 11px;color : black;background-color : white;">'
+            .$view['monthselect'].$view['im'].'<br />'._JPGRAPH.'</td>
+        </tr>
+    </tbody>
+</table>';
+?>
